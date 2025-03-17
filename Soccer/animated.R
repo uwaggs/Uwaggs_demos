@@ -1,6 +1,5 @@
 library(dplyr)
 library(ggplot2)
-library(ggbump)
 library(ggimage)
 library(gganimate)
 
@@ -47,7 +46,7 @@ ggplot(prem_table, aes(x = week, y = -position, group = team_name)) +
   geom_line(aes(color = colour), size = 1, alpha = 0.7) +  # Track movement
   geom_image(aes(image = image_file), size = 0.05) +  # Show logos for all teams
   scale_y_continuous(labels = abs) +  # Keep rankings positive
-  labs(title = "League Position Over The Entire Season",
+  labs(title = "League Position Over The Entire 2020-21 Season",
        x = "Week", y = "League Position") +
   scale_color_identity() +
   theme_minimal() +

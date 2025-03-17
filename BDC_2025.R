@@ -4,7 +4,7 @@ library(sportyR)
 library(ggplot2)
 
 ## reading files from bdc github releases
-team_a_tracking <- read.csv("https://github.com/bigdatacup/Big-Data-Cup-2025/releases/download/Data/2024-10-13.Team.B.@.Team.A.-.Tracking.csv")
+team_a_tracking <- read.csv("https://github.com/bigdatacup/Big-Data-Cup-2025/releases/download/Data/2024-10-25.Team.H.@.Team.G.-.Tracking.csv")
 team_c_tracking <- read.csv("https://github.com/bigdatacup/Big-Data-Cup-2025/releases/download/Data/2024-11-15.Team.D.@.Team.C.-.Tracking.csv")
 team_e_tracking <- read.csv("https://github.com/bigdatacup/Big-Data-Cup-2025/releases/download/Data/2024-11-16.Team.F.@.Team.E.-.Tracking.csv")
 
