@@ -21,6 +21,7 @@ library(tidyr)
 library(sf)
 library(sportyR)
 library(tidyverse)
+devtools::install_github("mtoto/ufc.stats",force = TRUE)
 ```
 
 
@@ -108,6 +109,8 @@ p2 <- animate(p, fps = 30, duration = (max_frame - min_frame)/30 + 1, renderer =
 ![](bdc.gif)
 
 ## UFC Hit Rate Data Visualization
+
+
 
 ```{r, eval = FALSE}
 create_circle <- function(center = c(0, 0), radius = 1, npoints = 100) {
