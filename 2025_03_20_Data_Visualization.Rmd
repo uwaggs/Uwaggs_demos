@@ -84,7 +84,7 @@ game_flow <- ggplot() +
 ```{r}
 team_a_tracking <- read.csv("https://github.com/bigdatacup/Big-Data-Cup-2025/releases/download/Data/2024-10-25.Team.H.@.Team.G.-.Tracking.csv")
 
-glimpse(team_a_tracking)
+pillar::glimpse(team_a_tracking)
 ```
 
 
@@ -109,6 +109,14 @@ p2 <- animate(p, fps = 30, duration = (max_frame - min_frame)/30 + 1, renderer =
 ![](bdc.gif)
 
 ## UFC Hit Rate Data Visualization
+
+```{r}
+hits <- ufc.stats::ufc_stats
+
+pillar::glimpse(hits)
+
+```
+
 
 
 
@@ -177,8 +185,8 @@ create_human_silhouette(fighter_data[1,])
 ## Premier League Matchweek Visualization
 
 ```{r}
-Prem_Table <- read.csv("Cleaned_prem_table.csv") %>% select(-1,-2)
-glimpse(Prem_Table)
+Prem_Table <- read.csv("Cleaned_prem_table.csv") 
+pillar::glimpse(Prem_Table)
 ```
 
 
